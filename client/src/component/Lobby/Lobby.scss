@@ -1,0 +1,39 @@
+#room-list {
+  .ant-list-items {
+    padding: 0;
+    margin: 0;
+    .room-item {
+      list-style: none;
+      &:hover {
+        background-color:whitesmoke;
+        cursor: pointer;
+      }
+      .ant-list-item-meta-avatar {
+        background: #c6ffdd; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f7797d,
+          #fbd786,
+          #c6ffdd
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #f7797d,
+          #fbd786,
+          #c6ffdd
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+      .ant-list-item-meta-content {
+        flex: 1;
+      }
+    }
+  }
+}

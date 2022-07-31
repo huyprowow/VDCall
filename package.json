@@ -1,0 +1,24 @@
+{
+  "name": "VDCall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"cd client && npm start\""
+  },
+  "keywords": [],
+  "author": "Huyprowow",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
