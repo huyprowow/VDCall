@@ -4,3 +4,5 @@
 # misc
 .DS_Store
 /config/config.env
+/ssl/key.pem
+/ssl/cert.pem
