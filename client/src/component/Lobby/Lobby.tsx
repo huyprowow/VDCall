@@ -1,16 +1,15 @@
+import { UserOutlined } from "@ant-design/icons";
+import { Avatar, Layout, List, Typography } from "antd";
 import { useEffect, useState } from "react";
 import AxiosInstance from "../../lib/AxiosInstance";
 import Find from "../Find/Find";
-import { UserOutlined } from "@ant-design/icons";
-import { Avatar, Layout, List } from "antd";
-import "./Lobby.scss";
 import RoomContent from "../Room/RoomContent";
-import { Typography } from 'antd';
+import "./Lobby.scss";
 
 const { Title } = Typography;
 const { Sider, Content } = Layout;
 
-const Lobby = () => {
+const Lobby = (socket:any) => {
   const [rooms, setRooms] = useState();
   const getRooms = async () => {
     try {

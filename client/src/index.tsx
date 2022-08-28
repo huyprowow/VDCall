@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import socketIO from 'socket.io-client';
 import App from "./App";
 
 import Lobby from "./component/Lobby/Lobby";
@@ -10,12 +11,13 @@ import SignIn from "./page/SignIn/SignIn";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+const socket = socketIO('http://localhost:3080');
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="room" element={<Lobby />} />
+        <Route path="/" element={<App socket={socket}/>} />
+        <Route path="room" element={<Lobby socket={socket} />} />
         <Route path="signup" element={<SignUp />}></Route>
         <Route path="signin" element={<SignIn />}></Route>
         {/* <Route path="/looby" element={<Lobby/>}></Route> */}

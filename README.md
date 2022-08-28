@@ -32,16 +32,23 @@ Self-signed certificates are not validated with any third party unless you impor
 **FYI, it's best practice to use SHA256 instead of SHA1 for better security, but this shows how to do it if you REALLY need to.**
 
 ## Run project:
-### 1. settup: 
+### 1. Settup: 
 * replace two file 'key.pem.example' and 'cert.pem.example' with file certificate you creating by openssl
 * rename config.env.example to config.env, fill information need
   * MONGO_URI: your mongodb uri
   * PASSWORD_CERT: passphrase when you create cert if need (using to decrypt cert.pem)
-* dependency install:
+### 2. installing dependency:
   * server: from root folder: ```npm i```
   * client: from root folder: ```cd client; npm i```
-* run project:
+### 3. run project:
   * run both: ```npm run dev```
   * or run single:
     1. server: from root folder: ```npm run server```
-    1. client: from root folder: ```cd client; npm start```
+    2. client: from root folder: ```cd client; npm start```
+
+# NOTE:
+## If http request throw this error: ```net::ERR_CERT_AUTHORITY_INVALID"```
+- Explain: After some research the issue turned out to be related to the browser not allowing requests to localhost over HTTPS when an invalid certificate was presented.
+- Solve:
+  - In order to allow these requests with these characteristics in chrome, one must go to ```chrome://flags/``` and enable the option ```"Allow invalid certificates for resources loaded from localhost."```
+  - In the case of firefox its similar, one must allow Self-Signed Certificates on Localhost, there is an excellent article on how to solve this issue [here](https://improveandrepeat.com/2016/09/allowing-self-signed-certificates-on-localhost-with-chrome-and-firefox/) 
