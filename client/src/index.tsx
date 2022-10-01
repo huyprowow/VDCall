@@ -8,10 +8,12 @@ import App from "./App";
 import Lobby from "./component/Lobby/Lobby";
 import SignUp from "./page/SignUp/SignUp";
 import SignIn from "./page/SignIn/SignIn";
+
+import 'antd/dist/antd.css'; 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-const socket = socketIO('http://localhost:3080');
+const socket = socketIO('https://localhost:3080/');
 root.render(
   <React.StrictMode>
     <BrowserRouter>

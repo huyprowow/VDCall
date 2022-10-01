@@ -9,7 +9,7 @@ import "./Lobby.scss";
 const { Title } = Typography;
 const { Sider, Content } = Layout;
 
-const Lobby = (socket:any) => {
+const Lobby = (socket: any) => {
   const [rooms, setRooms] = useState();
   const getRooms = async () => {
     try {
@@ -25,31 +25,33 @@ const Lobby = (socket:any) => {
     getRooms();
   }, []);
 
-  const onClickRoom=(roomId:string)=>{
-    console.log("click room",roomId);
-  }
+  const onClickRoom = (roomId: string) => {
+    console.log("click room", roomId);
+  };
   return (
-    <Layout style={{ display: "flex" }}>
-      <Sider style={{ height: "100vh" }} 
-      >
+    <Layout>
+      <Sider theme="light">
         <List
           id="room-list"
-          bordered
           size="large"
           header={
-          <>
-          <Title level={2}>
-            <Avatar icon={<UserOutlined />} />
-              {localStorage.getItem("userName")}
-            </Title>
-          <Find />
-          </>}
+            <>
+              <Title level={5}>
+                <Avatar icon={<UserOutlined />} style={{ margin: 10 }} />
+                {localStorage.getItem("userName")}
+              </Title>
+              <Find />
+            </>
+          }
           dataSource={rooms}
           renderItem={(room: IRoom) => (
-            <List.Item key={room._id} className="room-item" onClick={()=>onClickRoom(room._id)}>
+            <List.Item
+              key={room._id}
+              className="room-item"
+              onClick={() => onClickRoom(room._id)}
+            >
               <List.Item.Meta
-                style={{ display: "flex" }}
-                avatar={<Avatar size="large" icon={<UserOutlined />} />}
+                avatar={<Avatar size="small" icon={<UserOutlined />} />}
                 title={room.roomName}
                 description={room.roomDescription}
               />
@@ -57,7 +59,7 @@ const Lobby = (socket:any) => {
           )}
         />
       </Sider>
-      <Content style={{ height: "100vh", flex: "70" }}>
+      <Content>
         <RoomContent />
       </Content>
     </Layout>

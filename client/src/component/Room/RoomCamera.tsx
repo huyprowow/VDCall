@@ -1,5 +1,5 @@
-import { Button, Col, Row } from "antd";
-import Select from "rc-select";
+import { Button, Col, Row, Select } from "antd";
+
 import {
   PictureOutlined,
   PauseOutlined,
@@ -8,6 +8,7 @@ import {
   FundProjectionScreenOutlined,
 } from "@ant-design/icons";
 import { TrackHTMLAttributes, useEffect, useRef, useState } from "react";
+import { notificationCustom } from "../Message/Notification/notificationCustom";
 
 const { Option } = Select;
 const RoomCamera = () => {
@@ -60,7 +61,7 @@ const RoomCamera = () => {
     shareConstraints: "",
   });
   useEffect(() => {
-    getDeviceSelection();
+    getUserPermision();
     // if (videoRef.current) {
     //   videoRef.current.addEventListener("loadedmetadata", () => {
     //     console.log(
@@ -88,6 +89,20 @@ const RoomCamera = () => {
     //   };
     // }
   }, []);
+  const getUserPermision = async () => {
+    try {
+      await navigator.mediaDevices.getUserMedia(constraints);
+      getDeviceSelection();
+    } catch (error: any) {
+      console.log(error);
+      notificationCustom(
+        "error",
+        "Error",
+        "You must permision camera and micro to use feature"
+      );
+      return null;
+    }
+  };
 
   const getDeviceSelection = async () => {
     const devices = await navigator.mediaDevices.enumerateDevices();
@@ -98,8 +113,8 @@ const RoomCamera = () => {
     const audioDevices = devices.filter(
       (device) => device.kind === "audioinput"
     );
-    setAudioDevices(audioDevices);
-    setVideoDevices(videoDevices);
+    await setAudioDevices(audioDevices);
+    await setVideoDevices(videoDevices);
     console.log(devices);
   };
   const onPlayStream = async () => {
@@ -179,18 +194,37 @@ const RoomCamera = () => {
   };
   const onScreenShot = () => {
     if (canvasScreenShotRef.current) {
-      const ctx = canvasScreenShotRef.current.getContext("2d");
+      const ctx:any = canvasScreenShotRef.current.getContext("2d");
 
       if (videoRef.current) {
         // canvasScreenShotRef.current.width = videoRef.current.width;
         // canvasScreenShotRef.current.height = videoRef.current.height;
-        ctx?.drawImage(
-          videoRef.current,
-          0,
-          0,
-          canvasScreenShotRef.current.width,
-          canvasScreenShotRef.current.height
-        );
+
+        //bo xu li anh
+        // ctx.mozImageSmoothingEnabled = false;
+        // ctx.webkitImageSmoothingEnabled = false;
+        // ctx.msImageSmoothingEnabled = false;
+        // ctx.imageSmoothingEnabled = false;
+        
+        // ctx?.drawImage(
+        //   videoRef.current,
+        //   0,
+        //   0,
+        //   canvasScreenShotRef.current.width,
+        //   canvasScreenShotRef.current.height
+        // );
+
+        const cw=canvasScreenShotRef.current.width;
+        const ch=canvasScreenShotRef.current.height;
+        const vw=videoRef.current.videoWidth;
+        const vh=videoRef.current.videoHeight;
+        if(cw/ch<vw/vh){
+            const th=cw*vh/vw;
+          ctx?.drawImage(videoRef.current, 0, 0, vw, vh, 0, (ch-th)/2, cw, th);
+        }else{
+          const tw=ch*vw/vh;
+          ctx?.drawImage(videoRef.current, 0, 0, vw, vh, (cw-tw)/2, 0, tw, ch);
+        }
         if (imgScreenShotRef.current) {
           imgScreenShotRef.current.src =
             canvasScreenShotRef.current.toDataURL("image/png");
@@ -233,26 +267,33 @@ const RoomCamera = () => {
   };
 
   return (
-    <div style={{ height: "100vh" }}>
-      <Row style={{ display: "flex" }}>
-        <Col>
+    <>
+      <Row>
+        <Col span={12}>
           <video autoPlay width="200px" height="200px" ref={videoRef}></video>
         </Col>
-        <Col>
+        <Col span={12}>
           <canvas
             width="200px"
             height="200px"
             style={{ display: "none" }}
             ref={canvasScreenShotRef}
           ></canvas>
-          <img src="" alt="screen shot" ref={imgScreenShotRef} />
+          
+            <img
+              src=""
+              alt="screen shot"
+              ref={imgScreenShotRef}
+              style={{ objectFit: "contain" }}
+            />
+         
         </Col>
       </Row>
-      <Row style={{ display: "flex" }}>
-        <Col>
+      <Row>
+        <Col span={12}>
           <video autoPlay width="350px" height="300px" ref={vdShareRef}></video>
         </Col>
-        <Col style={{ display: "flex", flexFlow: "column wrap" }}>
+        <Col span={12} style={{ display: "flex", flexDirection: "column" }}>
           <Row style={{ flex: "50%", overflow: "scroll" }}>
             <pre>{infoShare.shareSetting}</pre>
           </Row>
@@ -261,9 +302,9 @@ const RoomCamera = () => {
           </Row>
         </Col>
       </Row>
-      <Row style={{ display: "flex", flexDirection: "column" }}>
-        <Col>
-          <Row style={{ display: "flex" }}>
+      <Row>
+        <Col span={12}>
+          <Row justify="center">
             <Col>
               <Button>
                 <PictureOutlined onClick={onScreenShot} />
@@ -291,38 +332,32 @@ const RoomCamera = () => {
             </Col>
           </Row>
         </Col>
-        <Col>
-          <Row style={{ display: "flex" }}>
-            <Col>
+        <Col span={12}>
+          <Row>
+            <Col span={12}>
               <Select
-                style={{ border: "1px solid gray" }}
+                placeholder="Select Audio"
+                style={{ width: "100%" }}
                 onChange={handleChangeAudio}
               >
                 {audioDevices.map((device) => {
                   return (
-                    <Option
-                      key={device.deviceId}
-                      value={device.deviceId}
-                      style={{ border: "1px solid black" }}
-                    >
+                    <Option key={device.deviceId} value={device.deviceId}>
                       {device.label}
                     </Option>
                   );
                 })}
               </Select>
             </Col>
-            <Col>
+            <Col span={12}>
               <Select
-                style={{ border: "1px solid gray" }}
+                placeholder="Select Camera"
+                style={{ width: "100%" }}
                 onChange={handleChangeCamera}
               >
                 {videoDevices.map((device) => {
                   return (
-                    <Option
-                      key={device.deviceId}
-                      value={device.deviceId}
-                      style={{ border: "1px solid black" }}
-                    >
+                    <Option key={device.deviceId} value={device.deviceId}>
                       {device.label}
                     </Option>
                   );
@@ -332,7 +367,7 @@ const RoomCamera = () => {
           </Row>
         </Col>
       </Row>
-    </div>
+    </>
   );
 };
 

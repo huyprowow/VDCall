@@ -1,22 +1,26 @@
 import { Button, Col, Row } from "antd";
 import { Link } from "react-router-dom";
 
-const App = (socket:any) => {
-  const onLogout=()=>{
+const App = (socket: any) => {
+  const onLogout = () => {
     localStorage.removeItem("userName");
-  }
+  };
   return (
-    <Row
-      style={{ display: "flex", fontSize: 26, justifyContent: "space-evenly" }}
-    >
+    <Row justify="space-evenly" style={{ marginTop: 10 }}>
       <Col>
-        <Link to="/room">Lobby</Link>
+        <Button>
+          <Link to="/room">Lobby</Link>
+        </Button>
       </Col>
       <Col>
-        <Link to="/signin">SignIn</Link>
+        <Button>
+          <Link to="/signin">SignIn</Link>
+        </Button>
       </Col>
       <Col>
-        <Link to="/signup">SignUp</Link>
+        <Button>
+          <Link to="/signup">SignUp</Link>
+        </Button>
       </Col>
       <Col>
         <Button onClick={onLogout}>SignOut</Button>
