@@ -5,6 +5,7 @@ const App = (socket: any) => {
   const onLogout = () => {
     localStorage.removeItem("userName");
   };
+
   return (
     <Row justify="space-evenly" style={{ marginTop: 10 }}>
       <Col>
@@ -20,6 +21,13 @@ const App = (socket: any) => {
       <Col>
         <Button>
           <Link to="/signup">SignUp</Link>
+        </Button>
+      </Col>
+      <Col>
+        <Button>
+          <a href="https://admin.socket.io" target="_blank">
+            Admin
+          </a>
         </Button>
       </Col>
       <Col>

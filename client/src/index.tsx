@@ -2,23 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import socketIO from 'socket.io-client';
+import socketIO from "socket.io-client";
 import App from "./App";
 
 import Lobby from "./component/Lobby/Lobby";
 import SignUp from "./page/SignUp/SignUp";
 import SignIn from "./page/SignIn/SignIn";
 
-import 'antd/dist/antd.css'; 
+import "antd/dist/antd.css";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-const socket = socketIO('https://localhost:3080/');
+console.log(`${process.env.REACT_APP_BASE_URL}`)
+const socket = socketIO(`${process.env.REACT_APP_BASE_URL}`, {
+  transports: ["websocket"],
+});
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App socket={socket}/>} />
+        <Route path="/" element={<App socket={socket} />} />
         <Route path="room" element={<Lobby socket={socket} />} />
         <Route path="signup" element={<SignUp />}></Route>
         <Route path="signin" element={<SignIn />}></Route>

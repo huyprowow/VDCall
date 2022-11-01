@@ -37,15 +37,26 @@ Self-signed certificates are not validated with any third party unless you impor
 * rename config.env.example to config.env, fill information need
   * MONGO_URI: your mongodb uri
   * PASSWORD_CERT: passphrase when you create cert if need (using to decrypt cert.pem)
+* rename .env.example to .env, fill information need
+  * REACT_APP_BASE_URL: your backend url
+  
 ### 2. installing dependency:
   * server: from root folder: ```npm i```
   * client: from root folder: ```cd client; npm i```
+  * pm2: ```npm install -g @socket.io/pm2```
 ### 3. run project:
   * run both: ```npm run dev```
   * or run single:
-    1. server: from root folder: ```npm run server```
+    1. server: 
+      - normal from root folder: ```npm run server```
+      - with pm2 from root folder: ```pm2 start ecosystem.config.js```
     2. client: from root folder: ```cd client; npm start```
-
+### 4. cancel run project 
+  * server:
+      1. node, nodemon Ctrl+C | Command + C
+      2. pm2 ```pm2 stop ecosystem.config.js```
+  * client: Ctrl+C | Command + C
+    
 # NOTE:
 ## If http request throw this error: ```net::ERR_CERT_AUTHORITY_INVALID"```
 - Explain: After some research the issue turned out to be related to the browser not allowing requests to localhost over HTTPS when an invalid certificate was presented.
