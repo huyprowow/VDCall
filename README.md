@@ -58,6 +58,7 @@ Self-signed certificates are not validated with any third party unless you impor
   * client: Ctrl+C | Command + C
     
 # NOTE:
+run ```pm2 logs``` in terminal to see log
 ## If http request throw this error: ```net::ERR_CERT_AUTHORITY_INVALID"```
 - Explain: After some research the issue turned out to be related to the browser not allowing requests to localhost over HTTPS when an invalid certificate was presented.
 - Solve:

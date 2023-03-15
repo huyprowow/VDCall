@@ -2,18 +2,18 @@ import React from "react";
 import { Button, Checkbox, Form, Input } from "antd";
 import AxiosInstance from "../../lib/AxiosInstance";
 import { useNavigate } from "react-router-dom";
+import { Service } from "../../service/index";
 const SignUp = () => {
   const navigate = useNavigate();
-  const onFinish = async (values:IAccount) => {
+  const onFinish = async (values: IAccount) => {
     console.log("Success:", values);
-    try {
-      const res = await AxiosInstance.post("/user/new", values);
-      console.log(res);
+    const success = await Service.ApiService.signUp(values);
+    if (success) {
       setTimeout(() => {
         navigate("/signin");
       }, 2500);
-    } catch (error) {
-      console.log(error);
+    }else{
+      return;
     }
   };
 

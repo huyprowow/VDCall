@@ -1,3 +1,4 @@
+const logger = require("./utils/logger");
 const port = require("./config/config").port;
 const passphrase = require("./config/config").passphrase;
 const app = require("./app");
@@ -13,8 +14,8 @@ const httpServer = https.createServer(options, app);
 initSocketServer(httpServer);
 httpServer
   .listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    logger.info(`Server is running on port ${port}`);
   })
   .on("error", (err) => {
-    console.log(err);
+    logger.error(err);
   });

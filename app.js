@@ -1,5 +1,6 @@
 const express = require("express");
-const logger = require("morgan");
+// const logger = require("morgan");
+const morganMiddleware = require("./middlewares/morgan.middleware");
 const cors=require("cors");
 const app = express();
 const lobbyRouter = require("./routes/lobby");
@@ -8,8 +9,10 @@ const userRouter = require("./routes/user");
 const chatRouter = require("./routes/chat");
 const errorHandling =require("./middlewares/errorHandling");
 const dbconnect = require("./utils/dbConnect");
+
 app.use(cors())
-app.use(logger("dev"));
+// app.use(logger("dev"));
+app.use(morganMiddleware);
 app.use(errorHandling);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

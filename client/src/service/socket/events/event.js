@@ -1,5 +1,5 @@
-const EVENTS = {
-  SOCKET_CONNECTION: "connection",
+export const EVENTS = {
+  SOCKET_CONNECTION: "SOCKET_CONNECTION",
   JOIN_ROOM: "JOIN_ROOM",
   LEAVE_ROOM: "LEAVE_ROOM",
   SEND_MESSAGE: "SEND_MESSAGE",
@@ -11,5 +11,3 @@ const EVENTS = {
   USER_JOINED: "USER_JOINED",
   SET_USER_INFO: "SET_USER_INFO",
 };
-
-module.exports =  EVENTS ;

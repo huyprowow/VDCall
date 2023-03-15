@@ -1,7 +1,7 @@
 import { Button, Col, Row } from "antd";
 import { Link } from "react-router-dom";
-
-const App = (socket: any) => {
+import { socket } from "./service/socket/socket";
+const App = () => {
   const onLogout = () => {
     localStorage.removeItem("userName");
   };

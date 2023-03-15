@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const MONGO_URI= require("../config/config").db_uri;
+const logger=require("../utils/logger");
 try {
   mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
@@ -10,6 +11,7 @@ try {
     wtimeoutMS: 45000,
     connectTimeoutMS: 45000,
   });
+  logger.info("Connected to MongoDB");
 } catch (error) {
-  console.log(error);
+  logger.error(error);
 }

@@ -1,22 +1,26 @@
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Layout, List, Typography } from "antd";
-import { useEffect, useState } from "react";
-import AxiosInstance from "../../lib/AxiosInstance";
+import { useEffect } from "react";
 import Find from "../Find/Find";
 import RoomContent from "../Room/RoomContent";
 import "./Lobby.scss";
+import { useRoomStore } from "../../store/room";
+import { Service } from "../../service/index";
 
 const { Title } = Typography;
 const { Sider, Content } = Layout;
 
-const Lobby = (socket: any) => {
-  const [rooms, setRooms] = useState();
+const Lobby = () => {
+  const rooms = useRoomStore((state) => state.rooms);
+  const setRooms = useRoomStore((state) => state.setRooms);
   const getRooms = async () => {
     try {
-      const rooms = await AxiosInstance.post("/room", {
-        userName: localStorage.getItem("userName"),
-      });
-      setRooms(rooms.data);
+      const res = await Service.ApiService.getRoomService();
+      setRooms(res.data);
+      Service.SocketService.User.setUserInfo();
+      Service.SocketService.User.userJoined();
+      const listRoomJoin = res.data.map((room: IRoom) => room._id);
+      Service.SocketService.Room.joinAllRoom(listRoomJoin);
     } catch (err) {
       console.log(err);
     }

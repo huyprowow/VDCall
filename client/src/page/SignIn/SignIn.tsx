@@ -1,21 +1,18 @@
 import React from "react";
 import { Button, Checkbox, Form, Input } from "antd";
-import AxiosInstance from "../../lib/AxiosInstance";
 import { useNavigate } from "react-router-dom";
+import { Service } from "../../service/index";
 const SignIn = () => {
   const navigate = useNavigate();
   const onFinish = async (values: IAccount) => {
     console.log("Success:", values);
-    try {
-      const res = await AxiosInstance.post("/user/signin", values);
-      
-      console.log(res);
-      localStorage.setItem("userName", values.userName);
+    const success = await Service.ApiService.signIn(values);
+    if (success) {
       setTimeout(() => {
         navigate("/room");
       }, 2500);
-    } catch (error) {
-      console.log(error);
+    } else {
+      return;
     }
   };
 

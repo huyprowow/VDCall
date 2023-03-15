@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import socketIO from "socket.io-client";
+
 import App from "./App";
 
 import Lobby from "./component/Lobby/Lobby";
@@ -13,16 +13,18 @@ import "antd/dist/antd.css";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-console.log(`${process.env.REACT_APP_BASE_URL}`)
-const socket = socketIO(`${process.env.REACT_APP_BASE_URL}`, {
-  transports: ["websocket"],
-});
+if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+  localStorage.debug = "*";
+} else {
+  // production code
+  localStorage.removeItem("debug");
+}
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App socket={socket} />} />
-        <Route path="room" element={<Lobby socket={socket} />} />
+        <Route path="/" element={<App />} />
+        <Route path="room" element={<Lobby />} />
         <Route path="signup" element={<SignUp />}></Route>
         <Route path="signin" element={<SignIn />}></Route>
         {/* <Route path="/looby" element={<Lobby/>}></Route> */}

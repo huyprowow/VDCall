@@ -9,57 +9,33 @@ import {
 } from "@ant-design/icons";
 import { TrackHTMLAttributes, useEffect, useRef, useState } from "react";
 import { notificationCustom } from "../Message/Notification/notificationCustom";
+import { useAudioDevicesStore } from "../../store/audio";
+import { useVideoDevicesStore } from "../../store/video";
+import { useConstraintsStore } from "../../store/constraint";
+import { useShareOptionsStore } from "../../store/shareOption";
+import { useInfoShareStore } from "../../store/infoShare";
 
 const { Option } = Select;
 const RoomCamera = () => {
-  const [audioDevices, setAudioDevices] = useState<MediaDeviceInfo[]>([]);
-  const [videoDevices, setVideoDevices] = useState<MediaDeviceInfo[]>([]);
+  
   const [start, setStart] = useState(false);
+  const audioDevices=useAudioDevicesStore((state)=>state.audioDevices)
+  const setAudioDevices=useAudioDevicesStore((state)=>state.setAudioDevices)
+  const videoDevices=useVideoDevicesStore((state)=>state.videoDevices)
+  const setVideoDevices=useVideoDevicesStore((state)=>state.setVideoDevices)
+  const constraints=useConstraintsStore((state)=>state.constraints)
+  const setConstraints=useConstraintsStore((state)=>state.setConstraints)
+  const shareOptions=useShareOptionsStore((state)=>state.shareOptions)
+  const setShareOptions=useShareOptionsStore((state)=>state.setShareOptions)
+  const infoShare=useInfoShareStore((state)=>state.infoShare)
+  const setInfoShare=useInfoShareStore((state)=>state.setInfoShare)
   // const [audioDevice, setAudioDevice] = useState<MediaDeviceInfo>();
   // const [videoDevice, setVideoDevice] = useState<MediaDeviceInfo>();
   let videoRef = useRef<HTMLVideoElement>(null);
   let vdShareRef = useRef<any>(null);
   let canvasScreenShotRef = useRef<HTMLCanvasElement>(null);
   let imgScreenShotRef = useRef<HTMLImageElement>(null);
-  const [constraints, setConstraints] = useState({
-    video: {
-      width: {
-        // min: 1280,
-        ideal: 1920,
-        max: 2560,
-      },
-      height: {
-        // min: 720,
-        ideal: 1080,
-        max: 1440,
-      },
-      frameRate: {
-        min: 10,
-        ideal: 30,
-        max: 60,
-      },
-      //mobile
-      // facingMode:  "user" cam trc // "environment" cam sau
-    },
-    audio: {
-      sampleSize: 16,
-      channelCount: 2,
-    },
-  });
-  const [shareOptions, setShareOptions] = useState<any>({
-    video: {
-      cursor: "always",
-    },
-    audio: {
-      echoCancellation: true,
-      noiseSuppression: true,
-      sampleRate: 44100,
-    },
-  });
-  const [infoShare, setInfoShare] = useState<any>({
-    shareSetting: "",
-    shareConstraints: "",
-  });
+  
   useEffect(() => {
     getUserPermision();
     // if (videoRef.current) {
