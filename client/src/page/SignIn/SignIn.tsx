@@ -4,14 +4,18 @@ import { useNavigate } from "react-router-dom";
 import { Service } from "../../service/index";
 const SignIn = () => {
   const navigate = useNavigate();
+  const [loading, setLoading] = React.useState(false);
   const onFinish = async (values: IAccount) => {
+    setLoading(true);
     console.log("Success:", values);
     const success = await Service.ApiService.signIn(values);
     if (success) {
       setTimeout(() => {
+        setLoading(false);
         navigate("/room");
       }, 2500);
     } else {
+      setLoading(false);
       return;
     }
   };
@@ -68,7 +72,7 @@ const SignIn = () => {
           span: 16,
         }}
       >
-        <Button type="primary" htmlType="submit">
+        <Button type="primary" htmlType="submit" loading={loading}>
           Submit
         </Button>
       </Form.Item>

@@ -14,7 +14,22 @@ exports.get_chat = async (req, res, next) => {
 exports.get_room_chat = async (req, res, next) => {
   try {
     const roomId = req.params.room;
-    const room = await Room.findById(roomId).populate("chats");
+    //c1
+    // const roomPopulateChat = await Room.findById(roomId)
+    //   .populate("chats");
+    // const result = await User.populate(roomPopulateChat, {
+    //   path: "chats.user",
+    // });
+
+    //c2 cai nay gon hon nen dung
+    const room = await Room.findById(roomId).populate({
+      path: "chats",
+      populate: {
+        path: "user",
+        select: "userName",
+      },
+    });
+
     res.status(200).json(room.chats);
   } catch (error) {
     res.status(500).json({
@@ -38,7 +53,6 @@ exports.chat_new_message = async (req, res, next) => {
       room.chats.push(newChat);
       await room.save();
       res.status(201).json({ message: "Chat created successfully" });
-
     } else {
       res.status(400).json({ message: "Room does not exist" });
     }

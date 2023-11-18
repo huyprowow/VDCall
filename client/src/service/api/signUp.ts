@@ -1,4 +1,4 @@
-import { notificationCustom } from "../../component/Message/Notification/notificationCustom";
+import { notificationCustom } from "../../Notification/notificationCustom";
 import AxiosInstance from "../../lib/AxiosInstance";
 export const signUp = async (values: IAccount) => {
   try {
@@ -6,7 +6,11 @@ export const signUp = async (values: IAccount) => {
     console.log(res);
     return true;
   } catch (error) {
-    notificationCustom("error", "Error", `${error}`);
+    notificationCustom({
+      type: "error",
+      message: "Error",
+      description: `${error}`,
+    });
     return false;
   }
 };

@@ -4,3 +4,6 @@
 - waiting room
 - invite link
 - screenshot
+- chat chatbot
+- image processing (lib)
+- ...

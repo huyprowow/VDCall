@@ -5,11 +5,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App";
 
-import Lobby from "./component/Lobby/Lobby";
 import SignUp from "./page/SignUp/SignUp";
 import SignIn from "./page/SignIn/SignIn";
 
 import "antd/dist/antd.css";
+import Lobby from "./page/Lobby/Lobby";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

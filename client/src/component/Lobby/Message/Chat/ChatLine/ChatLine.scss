@@ -1,0 +1,26 @@
+.chat-line {
+  .message-bubble {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px;
+    max-width: 80%;
+  }
+  .avatar-left {
+    background-color: black;
+    color: white;
+  }
+  .avatar-right {
+    background-color: white;
+    color: black;
+  }
+  .message-bubble-left {
+    @extend .message-bubble;
+    background-color: #ffafcc;
+    border-radius: 10px 10px 10px 0px;
+  }
+  .message-bubble-right {
+    @extend .message-bubble;
+    background-color: #a2d2ff;
+    border-radius: 10px 10px 0 10px;
+  }
+}

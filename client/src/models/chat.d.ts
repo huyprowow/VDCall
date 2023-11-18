@@ -1,5 +1,6 @@
-interface IChat{
-    chatMessage: string,
-    dateCreated:Date,
-    user: IUser,
+interface IChat {
+  _id: string;
+  chatMessage: string;
+  dateCreated: Date;
+  user: IUser;
 }

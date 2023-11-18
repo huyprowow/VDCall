@@ -7,3 +7,7 @@ interface IRoom {
   roomCreatedBy: string;
   dateCreated:Date;
 }
+interface IUserTyping{
+  roomName: string;
+  user: string[];
+}

@@ -33,6 +33,14 @@ const initSocketServer = (httpServer) => {
       console.log("🚀 ~ file: socketServer.js:30 ~ socket.on ~ data:", data);
       SocketMng.joinAllRoom(io, socket, data, callback);
     });
+    socket.on(EVENTS.TYPING, (data) => {
+      console.log("🚀 ~ file: socketServer.js:30 ~ socket.on ~ data:", data);
+      SocketMng.userTyping(io, socket, data);
+    })
+    socket.on(EVENTS.STOP_TYPING, (data) => {
+      console.log("🚀 ~ file: socketServer.js:30 ~ socket.on ~ data:", data);
+      SocketMng.userStopTyping(io, socket, data);
+    })
   });
 };
 

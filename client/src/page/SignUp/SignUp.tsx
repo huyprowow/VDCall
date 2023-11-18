@@ -5,14 +5,18 @@ import { useNavigate } from "react-router-dom";
 import { Service } from "../../service/index";
 const SignUp = () => {
   const navigate = useNavigate();
+  const [loading, setLoading] = React.useState(false);
   const onFinish = async (values: IAccount) => {
+    setLoading(true);
     console.log("Success:", values);
     const success = await Service.ApiService.signUp(values);
     if (success) {
       setTimeout(() => {
+        setLoading(false);
         navigate("/signin");
       }, 2500);
     }else{
+      setLoading(false);
       return;
     }
   };

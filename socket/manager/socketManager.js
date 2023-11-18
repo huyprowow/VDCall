@@ -1,5 +1,6 @@
 const logger = require("../../utils/logger");
 const Room = require("../class/Room");
+const User = require("../class/User");
 class SocketManager {
   handleConnect = () => {
     logger.info("Socket connected");
@@ -14,5 +15,13 @@ class SocketManager {
     socket.user = data.user;
     callback({ status: "ok", message: "set user info success" });
   };
+  userTyping = (io, socket, data) => {
+   const user=new User(io,socket,data);
+    user.userTyping();
+  }
+  userStopTyping = (io, socket, data) => {
+    const user=new User(io,socket,data);
+    user.userStopTyping();
+  }
 }
 module.exports = SocketManager;

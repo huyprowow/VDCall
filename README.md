@@ -57,6 +57,10 @@ Self-signed certificates are not validated with any third party unless you impor
       2. pm2 ```pm2 stop ecosystem.config.js```
   * client: Ctrl+C | Command + C
     
+### 5. swagger doc:
+  - gen swagger doc: swagger-autogen
+  - view swagger: https://localhost:3080/doc
+
 # NOTE:
 run ```pm2 logs``` in terminal to see log
 ## If http request throw this error: ```net::ERR_CERT_AUTHORITY_INVALID"```

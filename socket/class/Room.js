@@ -21,5 +21,6 @@ class Room {
       message: `Joined`,
     });
   }
+  
 }
 module.exports = Room;

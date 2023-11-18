@@ -1,4 +1,4 @@
-import { notificationCustom } from "../../component/Message/Notification/notificationCustom";
+import { notificationCustom } from "../../Notification/notificationCustom";
 import AxiosInstance from "../../lib/AxiosInstance";
 
 export const signIn = async (values: IAccount) => {
@@ -8,7 +8,11 @@ export const signIn = async (values: IAccount) => {
     localStorage.setItem("userName", values.userName);
     return true;
   } catch (error) {
-    notificationCustom("error", "Error", `${error}`);
+    notificationCustom({
+      type: "error",
+      message: "Error",
+      description: `${error}`,
+    });
     return false;
   }
 };
