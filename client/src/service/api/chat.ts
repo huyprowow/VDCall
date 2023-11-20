@@ -12,3 +12,22 @@ export const getChats = async (roomId: string) => {
     });
   }
 };
+export const sendChatMessage = async (
+  roomId: string,
+  chatMessage: string,
+  userName: string
+) => {
+  try {
+    const res = await AxiosInstance.post(`/${roomId}/new`, {
+      chatMessage,
+      userName,
+    });
+    return res.data;
+  } catch (error: any) {
+    notificationCustom({
+      type: "error",
+      message: "Error when send message",
+      description: error,
+    });
+  }
+};

@@ -3,10 +3,7 @@ const port = require("../config/config").port;
 
 const outputFile = "docs/swagger_output.json";
 const endpointsFiles = [
-  "routes/chat.js",
-  "routes/room.js",
-  "routes/user.js",
-  "routes/lobby.js",
+  "app.js",
 ];
 const doc = {
   //   openapi: "3.0.3", // present supported openapi version

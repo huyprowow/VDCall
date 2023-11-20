@@ -11,7 +11,6 @@ const Message = (props: Props) => {
   const usersTyping = useRoomStore((state) => state.usersTyping.user);
   const setUsersTyping = useRoomStore((state) => state.setUsersTyping);
   const currentRoom = useRoomStore((state) => state.currentRoom);
-
   // Service.SocketService.Chat.listeningTyping(setUsersTyping, currentRoom);
   // let timeout: any = undefined;
 
@@ -40,6 +39,18 @@ const Message = (props: Props) => {
       }
     }, 1000);
   };
+  const sendMessage = () => {
+    const userName = localStorage.getItem("userName");
+    if (!userName) return;
+    
+    // Service.SocketService.Chat.sendMessage({
+    //   roomName: currentRoom._id,
+    //   message: chatMessage,
+    //   userName: userName,
+    // });
+    setChatMessage("");
+  }
+
   const userTypingNotIncludeMe = usersTyping?.filter(
     (user) => user !== localStorage.getItem("userName")
   );
@@ -77,7 +88,7 @@ const Message = (props: Props) => {
           }}
         >
           <Input onChange={handleTyping} />
-          <Button icon={<SendOutlined />}></Button>
+          <Button icon={<SendOutlined />} onClick={sendMessage}></Button>
         </div>
       </Col>
     </Row>
