@@ -1,12 +1,12 @@
-import { userTyping } from './../service/socket/chat/chat';
+import { usersTyping } from './../service/socket/chat/chat';
 import { create } from "zustand";
 type roomState = {
   rooms: IRoom[];
   setRooms: (rooms: IRoom[]) => void;
-  userTyping: IUserTyping;
+  usersTyping: IUsersTyping;
   currentRoom: IRoom;
   setCurrentRoom: (currentRoom: IRoom) => void;
-  setUserTyping: (userTyping: IUserTyping) => void;
+  setUsersTyping: (usersTyping: IUsersTyping) => void;
 };
 
 export const useRoomStore = create<roomState>((set) => ({
@@ -14,6 +14,6 @@ export const useRoomStore = create<roomState>((set) => ({
   setRooms: (rooms: IRoom[]) => set({ rooms }),
   currentRoom: {} as IRoom,
   setCurrentRoom: (currentRoom: IRoom) => set({ currentRoom }),
-  userTyping:{} as IUserTyping,
-  setUserTyping: (userTyping: IUserTyping) => set({ userTyping }),
+  usersTyping:{} as IUsersTyping,
+  setUsersTyping: (usersTyping: IUsersTyping) => set({ usersTyping }),
 }));

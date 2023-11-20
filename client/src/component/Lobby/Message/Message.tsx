@@ -1,5 +1,5 @@
 import { Button, Col, Input, Row, Space } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
 import { SendOutlined } from "@ant-design/icons";
 import Chat from "./Chat/Chat";
 import { useRoomStore } from "../../../store/room";
@@ -8,20 +8,41 @@ type Props = {};
 
 const Message = (props: Props) => {
   const [chatMessage, setChatMessage] = React.useState("");
-  const userTyping = useRoomStore((state) => state.userTyping.user);
-  const setUserTyping = useRoomStore((state) => state.setUserTyping);
+  const usersTyping = useRoomStore((state) => state.usersTyping.user);
+  const setUsersTyping = useRoomStore((state) => state.setUsersTyping);
   const currentRoom = useRoomStore((state) => state.currentRoom);
+
+  // Service.SocketService.Chat.listeningTyping(setUsersTyping, currentRoom);
+  // let timeout: any = undefined;
+
+  useEffect(() => {
+    Service.SocketService.Chat.listeningTyping(setUsersTyping, currentRoom);
+  }, [usersTyping,currentRoom,setUsersTyping]);
   const handleTyping = (e: any) => {
     const userName = localStorage.getItem("userName");
     if (!userName) return;
-    const newUserTyping = [...userTyping, userName];
-    setUserTyping({
-      roomName: currentRoom.roomName,
-      user: newUserTyping,
-    });
+    if (!usersTyping?.includes(userName)) {
+      const newUsersTyping =
+        usersTyping?.length > 0 ? [...usersTyping, userName] : [userName];
+      console.log("newUsersTyping", newUsersTyping);
+      setUsersTyping({
+        roomName: currentRoom.roomName,
+        user: newUsersTyping,
+      });
+    }
     setChatMessage(e.target.value);
-    Service.SocketService.Chat.userTyping(currentRoom._id);
+    setTimeout(() => {
+      if (usersTyping?.length > 0) {
+        Service.SocketService.Chat.usersTyping({
+          roomName: currentRoom._id,
+          usersTyping: usersTyping,
+        }); //id la room name luon
+      }
+    }, 1000);
   };
+  const userTypingNotIncludeMe = usersTyping?.filter(
+    (user) => user !== localStorage.getItem("userName")
+  );
   return (
     <Row
       style={{
@@ -38,9 +59,16 @@ const Message = (props: Props) => {
         <Chat />
       </Col>
       <Col>
-        <span style={{
-          color: "gray",
-        }}>xxx</span>
+        {userTypingNotIncludeMe?.length > 0 ? (
+          userTypingNotIncludeMe?.length === 1 ? (
+            <p>{userTypingNotIncludeMe[0]} is typing...</p>
+          ) : (
+            <p>
+              {userTypingNotIncludeMe[0]} and{" "}
+              {userTypingNotIncludeMe.length - 1} others are typing...
+            </p>
+          )
+        ) : null}
         <div
           style={{
             padding: "5px 5px 15px 0",

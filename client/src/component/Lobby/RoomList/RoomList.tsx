@@ -22,17 +22,20 @@ const RoomList = (props: Props) => {
       Service.SocketService.User.userJoined();
       const listRoomJoin = res.data.map((room: IRoom) => room._id);
       Service.SocketService.Room.joinAllRoom(listRoomJoin);
+      if (res.data.length > 0) {
+        console.log("res.data[0]._id", res.data[0]._id);
+        onClickRoom(res.data[0]._id);
+      }
     } catch (err) {
       console.log(err);
     }
   };
   useEffect(() => {
     getRooms();
-  }, []);
+  }, [rooms.length]);
   const onClickRoom = async (roomId: string) => {
     console.log("click room", roomId);
     const chats = await Service.ApiService.getChats(roomId);
-    console.log(chats);
     const currentRoom = rooms.find((room: IRoom) => room._id === roomId);
     if (currentRoom) {
       setCurrentRoom(currentRoom);

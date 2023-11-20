@@ -1,4 +1,4 @@
-import { userTyping } from './../service/socket/chat/chat';
+import { usersTyping } from './../service/socket/chat/chat';
 import { create } from "zustand";
 type chatState = {
   chats: IChat[];

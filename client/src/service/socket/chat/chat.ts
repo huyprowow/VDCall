@@ -1,16 +1,28 @@
-import { response } from "express";
 import { EVENTS } from "../events/event";
 import { socket } from "../socket";
+import { useRoomStore } from "../../../store/room";
 
-export const userTyping = (roomName: string) => {
+export const usersTyping = ({
+  roomName,
+  usersTyping,
+}: {
+  roomName: string;
+  usersTyping: string[];
+}) => {
   socket.emit(EVENTS.TYPING, {
     roomName,
-  },(response: any) => {
-
+    usersTyping,
   });
 };
-export const userStopTyping = (roomName: string) => {
-    socket.emit(EVENTS.STOP_TYPING, {
-        roomName,
-    });
-}
+
+export const listeningTyping = (setUsersTyping: any, currentRoom: any) => {
+  socket.on(EVENTS.TYPING, (response: any) => {
+    // console.log("response", response); vẫn không hiểu vì sao nó log cái response này nhiều vcl mà render với emit lên sẻver đúng số lần
+    if (currentRoom._id === response.roomName) {
+      setUsersTyping({
+        user: response.usersTyping,
+        roomName: response.roomName,
+      });
+    }
+  });
+};

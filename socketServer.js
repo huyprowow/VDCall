@@ -35,11 +35,7 @@ const initSocketServer = (httpServer) => {
     });
     socket.on(EVENTS.TYPING, (data) => {
       console.log("🚀 ~ file: socketServer.js:30 ~ socket.on ~ data:", data);
-      SocketMng.userTyping(io, socket, data);
-    })
-    socket.on(EVENTS.STOP_TYPING, (data) => {
-      console.log("🚀 ~ file: socketServer.js:30 ~ socket.on ~ data:", data);
-      SocketMng.userStopTyping(io, socket, data);
+      SocketMng.usersTyping(io, socket, data);
     })
   });
 };

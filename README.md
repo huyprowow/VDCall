@@ -59,7 +59,7 @@ Self-signed certificates are not validated with any third party unless you impor
     
 ### 5. swagger doc:
   - gen swagger doc: swagger-autogen
-  - view swagger: https://localhost:3080/doc or https://localhost:{your port you config in file .env}/doc
+  - view swagger: https://localhost:3080/doc or https://localhost:{your_port_you_config_in_file_.env}/doc
 
 # NOTE:
 run ```pm2 logs``` in terminal to see log

@@ -21,6 +21,19 @@ class Room {
       message: `Joined`,
     });
   }
+  usersTyping() {
+    console.log(this.#data);
+    try {
+      this.#io.to(this.#data.roomName).emit("TYPING", {
+        usersTyping:this.#data.usersTyping,
+        roomName: this.#data.roomName,
+        message: `user typing`,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
   
 }
 module.exports = Room;

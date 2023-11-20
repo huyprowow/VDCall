@@ -15,13 +15,10 @@ class SocketManager {
     socket.user = data.user;
     callback({ status: "ok", message: "set user info success" });
   };
-  userTyping = (io, socket, data) => {
-   const user=new User(io,socket,data);
-    user.userTyping();
+  usersTyping = (io, socket, data) => {
+   const room=new Room(io,socket,data);
+    room.usersTyping();
   }
-  userStopTyping = (io, socket, data) => {
-    const user=new User(io,socket,data);
-    user.userStopTyping();
-  }
+
 }
 module.exports = SocketManager;
