@@ -1,6 +1,6 @@
 const logger = require("./utils/logger");
 const port = require("./config/config").port;
-const passphrase = require("./config/config").passphrase;
+// const passphrase = require("./config/config").passphrase;
 const app = require("./app");
 // const https = require("https");
 const http = require("http");
