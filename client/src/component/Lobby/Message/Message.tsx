@@ -16,7 +16,7 @@ const Message = (props: Props) => {
 
   useEffect(() => {
     Service.SocketService.Chat.listeningTyping(setUsersTyping, currentRoom);
-  }, [usersTyping,currentRoom,setUsersTyping]);
+  }, [usersTyping, currentRoom, setUsersTyping]);
   const handleTyping = (e: any) => {
     const userName = localStorage.getItem("userName");
     if (!userName) return;
@@ -40,16 +40,31 @@ const Message = (props: Props) => {
     }, 1000);
   };
   const sendMessage = () => {
+
     const userName = localStorage.getItem("userName");
     if (!userName) return;
-    
-    // Service.SocketService.Chat.sendMessage({
-    //   roomName: currentRoom._id,
-    //   message: chatMessage,
-    //   userName: userName,
-    // });
+    const newUserTyping=usersTyping?.filter((user)=>user!==userName);
+    setUsersTyping({
+       roomName: currentRoom._id,
+       user: newUserTyping,
+    })
+    Service.SocketService.Chat.usersTyping({
+      roomName: currentRoom._id,
+      usersTyping: newUserTyping,
+    });
+    const res=Service.ApiService.sendChatMessage({
+      roomId: currentRoom._id,
+      chatMessage: chatMessage,
+      userName: userName,
+    });
+   
+    Service.SocketService.Chat.sendChatMessage({
+      roomName: currentRoom._id,
+      message: chatMessage,
+      userName: userName,
+    });
     setChatMessage("");
-  }
+  };
 
   const userTypingNotIncludeMe = usersTyping?.filter(
     (user) => user !== localStorage.getItem("userName")

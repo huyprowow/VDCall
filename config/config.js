@@ -4,5 +4,5 @@ module.exports = {
   //   METERED_SECRET_KEY: process.env.METERED_SECRET_KEY || "",
   port: process.env.PORT || 3080,
   db_uri: process.env.MONGO_URI.toString(),
-  passphrase:process.env.PASSWORD_CERT
+  // passphrase:process.env.PASSWORD_CERT
 };
