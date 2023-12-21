@@ -12,13 +12,17 @@ export const getChats = async (roomId: string) => {
     });
   }
 };
-export const sendChatMessage = async (
-  roomId: string,
-  chatMessage: string,
-  userName: string
-) => {
+export const sendChatMessage = async ({
+  roomId,
+  chatMessage,
+  userName,
+}: {
+  roomId: string;
+  chatMessage: string;
+  userName: string;
+}) => {
   try {
-    const res = await AxiosInstance.post(`/${roomId}/new`, {
+    const res = await AxiosInstance.post(`/chat/${roomId}/new`, {
       chatMessage,
       userName,
     });

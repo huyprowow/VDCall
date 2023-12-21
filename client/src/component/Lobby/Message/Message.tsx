@@ -39,29 +39,36 @@ const Message = (props: Props) => {
       }
     }, 1000);
   };
-  const sendMessage = () => {
-
+  const sendMessage = async () => {
     const userName = localStorage.getItem("userName");
     if (!userName) return;
-    const newUserTyping=usersTyping?.filter((user)=>user!==userName);
+    const newUserTyping = usersTyping?.filter((user) => user !== userName);
     setUsersTyping({
-       roomName: currentRoom._id,
-       user: newUserTyping,
-    })
+      roomName: currentRoom._id,
+      user: newUserTyping,
+    });
     Service.SocketService.Chat.usersTyping({
       roomName: currentRoom._id,
       usersTyping: newUserTyping,
     });
-    const res=Service.ApiService.sendChatMessage({
+    const dataRes = await Service.ApiService.sendChatMessage({
       roomId: currentRoom._id,
       chatMessage: chatMessage,
       userName: userName,
     });
-   
+    const newChat = {
+      chatMessage: dataRes.newChat.chatMessage,
+      dateCreated: dataRes.newChat.dateCreated,
+      user: {
+        _id: dataRes.newChat.user,
+        userName: userName,
+      },
+      __v: dataRes.newChat.__v,
+      _id: dataRes.newChat._id,
+    };
     Service.SocketService.Chat.sendChatMessage({
-      roomName: currentRoom._id,
-      message: chatMessage,
-      userName: userName,
+      newChat: newChat,
+      roomId: currentRoom._id,
     });
     setChatMessage("");
   };

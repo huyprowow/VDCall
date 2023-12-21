@@ -1,4 +1,4 @@
-import { usersTyping, listeningTyping } from './chat/chat';
+import { usersTyping, listeningTyping, sendChatMessage, listeningMessage } from './chat/chat';
 import { joinAllRoom } from './room/room';
 import { setUserInfo, userJoined } from './user/user';
 
@@ -12,6 +12,8 @@ export const SocketService ={
     },
     Chat:{
         usersTyping,
-        listeningTyping
+        listeningTyping,
+        sendChatMessage,
+        listeningMessage
     }
 }

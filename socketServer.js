@@ -37,6 +37,9 @@ const initSocketServer = (httpServer) => {
       console.log("🚀 ~ file: socketServer.js:30 ~ socket.on ~ data:", data);
       SocketMng.usersTyping(io, socket, data);
     })
+    socket.on(EVENTS.SEND_MESSAGE, (data) => {
+      SocketMng.sendChatInRoom(io, socket, data);
+    });
   });
 };
 

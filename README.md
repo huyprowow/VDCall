@@ -61,6 +61,12 @@ Self-signed certificates are not validated with any third party unless you impor
   - gen swagger doc: swagger-autogen
   - view swagger: https://localhost:3080/doc or https://localhost:{your_port_you_config_in_file_.env}/doc
 
+### 5. install and uninstall as a service in window
+  1. open cmd/powershell/windowterminal in administrator in root project folder
+  2. 
+    * install: ```node install_service.js```
+    * uninstall: ```node uninstall_service.js```
+
 # NOTE:
 run ```pm2 logs``` in terminal to see log
 ## If http request throw this error: ```net::ERR_CERT_AUTHORITY_INVALID"```

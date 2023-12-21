@@ -52,7 +52,7 @@ exports.chat_new_message = async (req, res, next) => {
       await newChat.save();
       room.chats.push(newChat);
       await room.save();
-      res.status(201).json({ message: "Chat created successfully" });
+      res.status(201).json({ message: "Chat created successfully",newChat:newChat });
     } else {
       res.status(400).json({ message: "Room does not exist" });
     }
@@ -62,3 +62,4 @@ exports.chat_new_message = async (req, res, next) => {
     });
   }
 };
+exports.get_chat_by_

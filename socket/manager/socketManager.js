@@ -19,6 +19,10 @@ class SocketManager {
    const room=new Room(io,socket,data);
     room.usersTyping();
   }
+  sendChatInRoom = (io, socket, data) => {
+    const user = new User(io, socket, data);
+    user.sendChatInRoom(data);
+  };
 
 }
 module.exports = SocketManager;

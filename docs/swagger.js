@@ -2,9 +2,7 @@ const swaggerAutogen = require("swagger-autogen")();
 const port = require("../config/config").port;
 
 const outputFile = "docs/swagger_output.json";
-const endpointsFiles = [
-  "app.js",
-];
+const endpointsFiles = ["app.js"];
 const doc = {
   //   openapi: "3.0.3", // present supported openapi version
   info: {
@@ -17,17 +15,17 @@ const doc = {
       url: "https://huyprowow.github.io/", // website
     },
   },
-//   servers: [
-//     //localhost server
-//     {
-//       url: `https://localhost:${port}`, // url
-//       description: "Local server", // name
-//     },
-//     //test server
-//     //production server
-//   ],
-  host: 'localhost:3080',
-  schemes: ["https", "http"],
+  //   servers: [
+  //     //localhost server
+  //     {
+  //       url: `https://localhost:${port}`, // url
+  //       description: "Local server", // name
+  //     },
+  //     //test server
+  //     //production server
+  //   ],
+  host: "localhost:3080",
+  schemes: ["http", "https"],
 };
 
 swaggerAutogen(outputFile, endpointsFiles, doc);
