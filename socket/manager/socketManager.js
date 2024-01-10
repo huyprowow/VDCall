@@ -16,13 +16,13 @@ class SocketManager {
     callback({ status: "ok", message: "set user info success" });
   };
   usersTyping = (io, socket, data) => {
-   const room=new Room(io,socket,data);
+    const room = new Room(io, socket, data);
     room.usersTyping();
-  }
+  };
   sendChatInRoom = (io, socket, data) => {
     const user = new User(io, socket, data);
+    console.log(data);
     user.sendChatInRoom(data);
   };
-
 }
 module.exports = SocketManager;

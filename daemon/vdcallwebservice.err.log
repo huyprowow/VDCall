@@ -1,0 +1,1496 @@
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 50821,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 50693,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 50997,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 36288,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 36285,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 36591,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 51458,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 51776,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 51825,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 59929,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 59929,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 59617,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 31731,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 31730,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 31966,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 32060,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 32292,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 32354,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: Server selection timed out after 5000 ms
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'RSSecondary',
+        hosts: [
+          'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+          'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+          'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          availabilityZone: 'ape1-az2',
+          workloadType: 'OPERATIONAL',
+          nodeType: 'ELECTABLE',
+          provider: 'AWS',
+          region: 'AP_EAST_1'
+        },
+        minWireVersion: 0,
+        maxWireVersion: 17,
+        roundTripTime: 357,
+        lastUpdateTime: 12342970,
+        lastWriteDate: 2024-01-03T13:39:42.000Z,
+        topologyVersion: {
+          processId: ObjectId { [Symbol(id)]: [Buffer [Uint8Array]] },
+          counter: 3
+        },
+        primary: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        me: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        setName: 'atlas-dpenpr-shard-0',
+        setVersion: 2,
+        logicalSessionTimeoutMinutes: 30,
+        '$clusterTime': {
+          clusterTime: Timestamp { low: 2, high: 1704289182, unsigned: true },
+          signature: { hash: [Buffer [Uint8Array]], keyId: [Long] }
+        }
+      },
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 12342610,
+        lastWriteDate: 0
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 12342610,
+        lastWriteDate: 0
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    commonWireVersion: 17,
+    logicalSessionTimeoutMinutes: 30
+  },
+  code: undefined
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\manager\socketManager.js:16
+    callback({ status: "ok", message: "set user info success" });
+    ^
+
+TypeError: callback is not a function
+    at SocketManager.setUserInfo (E:\WebRTC\VDCall\socket\manager\socketManager.js:16:5)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:26:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\Room.js:18
+      userName: this.#socket.user.userName,
+                                  ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at Room.joinAllRoom (E:\WebRTC\VDCall\socket\class\Room.js:18:35)
+    at SocketManager.joinAllRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:10:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:34:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\socket\class\User.js:21
+      message: `user: ${this.#socket.user.userName} send message in ${roomId}`,
+                                          ^
+
+TypeError: Cannot read properties of undefined (reading 'userName')
+    at User.sendChatInRoom (E:\WebRTC\VDCall\socket\class\User.js:21:43)
+    at SocketManager.sendChatInRoom (E:\WebRTC\VDCall\socket\manager\socketManager.js:24:10)
+    at Socket.<anonymous> (E:\WebRTC\VDCall\socketServer.js:41:17)
+    at Socket.emit (node:events:514:28)
+    at Socket.emitUntyped (E:\WebRTC\VDCall\node_modules\socket.io\dist\typed-events.js:69:22)
+    at E:\WebRTC\VDCall\node_modules\socket.io\dist\socket.js:465:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+
+Node.js v20.5.1
+node:internal/errors:496
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error: querySrv ECONNREFUSED _mongodb._tcp.vdcalldbwebservice.xvqojol.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:45:19) {
+  errno: undefined,
+  code: 'ECONNREFUSED',
+  syscall: 'querySrv',
+  hostname: '_mongodb._tcp.vdcalldbwebservice.xvqojol.mongodb.net'
+}
+
+Node.js v20.5.1
+E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819
+  const serverSelectionError = new ServerSelectionError();
+                               ^
+
+MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+    at Connection.openUri (E:\WebRTC\VDCall\node_modules\mongoose\lib\connection.js:819:32)
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:377:10
+    at E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:1220:10)
+    at Mongoose.connect (E:\WebRTC\VDCall\node_modules\mongoose\lib\index.js:376:20)
+    at Object.<anonymous> (E:\WebRTC\VDCall\utils\dbConnect.js:5:12)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10) {
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-02.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 32496,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-02.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-01.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 32495,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-01.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      },
+      'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017' => ServerDescription {
+        _hostAddress: HostAddress {
+          isIPv6: false,
+          host: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net',
+          port: 27017
+        },
+        address: 'ac-zce4z8z-shard-00-00.xvqojol.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 32541,
+        lastWriteDate: 0,
+        error: MongoNetworkError: getaddrinfo ENOTFOUND ac-zce4z8z-shard-00-00.xvqojol.mongodb.net
+            at connectionFailureError (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:382:20)
+            at TLSSocket.<anonymous> (E:\WebRTC\VDCall\node_modules\mongodb\lib\cmap\connect.js:302:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          [Symbol(errorLabels)]: Set(0) {}
+        }
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-dpenpr-shard-0',
+    logicalSessionTimeoutMinutes: undefined
+  },
+  code: undefined
+}
+
+Node.js v20.5.1

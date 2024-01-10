@@ -80,3 +80,639 @@ Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
    at winsw.WrapperService.OnShutdown()
 2023-12-21 15:30:01 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2023-12-21 15:30:01 - Started 6184
+2023-12-21 18:06:15 - Stopping vdcallwebservice.exe
+2023-12-21 18:06:15 - ProcessKill 6184
+2023-12-21 18:06:15 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-21 19:10:15 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-21 19:10:15 - Started 5868
+2023-12-21 20:46:35 - Stopping vdcallwebservice.exe
+2023-12-21 20:46:35 - ProcessKill 5868
+2023-12-21 20:46:35 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-22 13:04:50 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-22 13:04:50 - Started 6444
+2023-12-22 15:35:13 - Stopping vdcallwebservice.exe
+2023-12-22 15:35:13 - ProcessKill 6444
+2023-12-22 15:35:13 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-22 17:17:37 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-22 17:17:37 - Started 5904
+2023-12-22 17:44:48 - Stopping vdcallwebservice.exe
+2023-12-22 17:44:48 - ProcessKill 5904
+2023-12-22 17:44:48 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-23 22:03:46 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-23 22:03:46 - Started 6280
+2023-12-24 03:00:34 - Stopping vdcallwebservice.exe
+2023-12-24 03:00:34 - ProcessKill 6280
+2023-12-24 03:00:35 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-24 12:51:23 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-24 12:51:23 - Started 5876
+2023-12-24 16:46:37 - Stopping vdcallwebservice.exe
+2023-12-24 16:46:37 - ProcessKill 5876
+2023-12-24 16:46:38 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-24 19:44:26 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-24 19:44:26 - Started 5588
+2023-12-24 23:26:36 - Stopping vdcallwebservice.exe
+2023-12-24 23:26:36 - ProcessKill 5588
+2023-12-24 23:26:36 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-25 14:00:17 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-25 14:00:17 - Started 4908
+2023-12-25 15:33:17 - Stopping vdcallwebservice.exe
+2023-12-25 15:33:17 - ProcessKill 4908
+2023-12-25 15:33:17 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-25 19:37:32 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-25 19:37:32 - Started 4076
+2023-12-25 22:46:43 - Stopping vdcallwebservice.exe
+2023-12-25 22:46:43 - ProcessKill 4076
+2023-12-25 22:46:44 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-26 19:09:48 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-26 19:09:48 - Started 5416
+2023-12-26 23:50:28 - Stopping vdcallwebservice.exe
+2023-12-26 23:50:28 - ProcessKill 5416
+2023-12-26 23:50:28 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-27 12:49:26 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-27 12:49:26 - Started 6296
+2023-12-27 14:07:01 - Stopping vdcallwebservice.exe
+2023-12-27 14:07:01 - ProcessKill 6296
+2023-12-27 14:07:01 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-27 17:49:39 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-27 17:49:40 - Started 6020
+2023-12-27 18:19:53 - Stopping vdcallwebservice.exe
+2023-12-27 18:19:53 - ProcessKill 6020
+2023-12-27 18:19:53 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-27 19:37:08 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-27 19:37:08 - Started 6052
+2023-12-28 01:56:21 - Stopping vdcallwebservice.exe
+2023-12-28 01:56:21 - ProcessKill 6052
+2023-12-28 01:56:21 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-28 15:21:38 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-28 15:21:38 - Started 6028
+2023-12-29 23:12:31 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-29 23:12:31 - Started 5680
+2023-12-30 03:57:32 - Stopping vdcallwebservice.exe
+2023-12-30 03:57:32 - ProcessKill 5680
+2023-12-30 03:57:32 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-30 14:57:45 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-30 14:57:45 - Started 6084
+2023-12-30 16:55:26 - Stopping vdcallwebservice.exe
+2023-12-30 16:55:26 - ProcessKill 6084
+2023-12-30 16:55:26 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-30 21:47:30 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-30 21:47:30 - Started 5928
+2023-12-31 01:12:37 - Stopping vdcallwebservice.exe
+2023-12-31 01:12:37 - ProcessKill 5928
+2023-12-31 01:12:37 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-31 14:05:44 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-31 14:05:44 - Started 6160
+2023-12-31 18:56:58 - Stopping vdcallwebservice.exe
+2023-12-31 18:56:58 - ProcessKill 6160
+2023-12-31 18:56:58 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-12-31 22:21:26 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-12-31 22:21:26 - Started 5940
+2024-01-01 01:00:21 - Stopping vdcallwebservice.exe
+2024-01-01 01:00:21 - ProcessKill 5940
+2024-01-01 01:00:21 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-02 19:48:43 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-02 19:48:43 - Started 6084
+2024-01-03 00:04:15 - Stopping vdcallwebservice.exe
+2024-01-03 00:04:15 - ProcessKill 6084
+2024-01-03 00:04:16 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-03 17:14:13 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 17:14:14 - Started 5672
+2024-01-03 19:33:46 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 19:33:46 - Started 19932
+2024-01-03 19:38:32 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 19:38:32 - Started 18628
+2024-01-03 19:49:14 - Stopping vdcallwebservice.exe
+2024-01-03 19:49:14 - ProcessKill 18628
+2024-01-03 19:49:15 - Found child process: 12440 Name: conhost.exe
+2024-01-03 19:49:15 - Found child process: 5840 Name: node.exe
+2024-01-03 19:49:15 - Stopping process 12440
+2024-01-03 19:49:15 - Send SIGINT 12440
+2024-01-03 19:49:15 - SIGINT to 12440 failed - Killing as fallback
+2024-01-03 19:49:15 - Stopping process 5840
+2024-01-03 19:49:15 - Send SIGINT 5840
+2024-01-03 19:49:15 - SIGINT to 5840 failed - Killing as fallback
+2024-01-03 19:49:15 - Stopping process 18628
+2024-01-03 19:49:15 - Send SIGINT 18628
+2024-01-03 19:49:15 - SIGINT to 18628 failed - Killing as fallback
+2024-01-03 19:49:15 - Finished vdcallwebservice.exe
+2024-01-03 19:49:17 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 19:49:18 - Started 16976
+2024-01-03 19:57:18 - Stopping vdcallwebservice.exe
+2024-01-03 19:57:18 - ProcessKill 16976
+2024-01-03 19:57:18 - Found child process: 7756 Name: conhost.exe
+2024-01-03 19:57:18 - Found child process: 7824 Name: node.exe
+2024-01-03 19:57:18 - Stopping process 7756
+2024-01-03 19:57:18 - Send SIGINT 7756
+2024-01-03 19:57:18 - SIGINT to 7756 failed - Killing as fallback
+2024-01-03 19:57:18 - Stopping process 7824
+2024-01-03 19:57:18 - Send SIGINT 7824
+2024-01-03 19:57:18 - SIGINT to 7824 failed - Killing as fallback
+2024-01-03 19:57:18 - Stopping process 16976
+2024-01-03 19:57:19 - Send SIGINT 16976
+2024-01-03 19:57:19 - SIGINT to 16976 failed - Killing as fallback
+2024-01-03 19:57:19 - Finished vdcallwebservice.exe
+2024-01-03 20:05:16 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 20:05:16 - Started 3300
+2024-01-03 20:38:49 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 20:38:49 - Started 9648
+2024-01-03 20:39:10 - Stopping vdcallwebservice.exe
+2024-01-03 20:39:10 - ProcessKill 9648
+2024-01-03 20:39:11 - Found child process: 13896 Name: conhost.exe
+2024-01-03 20:39:11 - Found child process: 15828 Name: node.exe
+2024-01-03 20:39:11 - Stopping process 13896
+2024-01-03 20:39:11 - Send SIGINT 13896
+2024-01-03 20:39:11 - SIGINT to 13896 failed - Killing as fallback
+2024-01-03 20:39:11 - Stopping process 15828
+2024-01-03 20:39:11 - Send SIGINT 15828
+2024-01-03 20:39:11 - SIGINT to 15828 failed - Killing as fallback
+2024-01-03 20:39:11 - Stopping process 9648
+2024-01-03 20:39:11 - Send SIGINT 9648
+2024-01-03 20:39:11 - SIGINT to 9648 failed - Killing as fallback
+2024-01-03 20:39:11 - Finished vdcallwebservice.exe
+2024-01-03 20:39:12 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 20:39:12 - Started 18060
+2024-01-03 20:40:49 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 20:40:49 - Started 5008
+2024-01-03 20:42:14 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 20:42:14 - Started 6732
+2024-01-03 20:51:05 - Stopping vdcallwebservice.exe
+2024-01-03 20:51:05 - ProcessKill 6732
+2024-01-03 20:51:05 - Found child process: 11040 Name: conhost.exe
+2024-01-03 20:51:05 - Found child process: 16052 Name: node.exe
+2024-01-03 20:51:05 - Stopping process 11040
+2024-01-03 20:51:05 - Send SIGINT 11040
+2024-01-03 20:51:05 - SIGINT to 11040 failed - Killing as fallback
+2024-01-03 20:51:05 - Stopping process 16052
+2024-01-03 20:51:05 - Send SIGINT 16052
+2024-01-03 20:51:05 - SIGINT to 16052 failed - Killing as fallback
+2024-01-03 20:51:05 - Stopping process 6732
+2024-01-03 20:51:05 - Send SIGINT 6732
+2024-01-03 20:51:05 - SIGINT to 6732 failed - Killing as fallback
+2024-01-03 20:51:05 - Finished vdcallwebservice.exe
+2024-01-03 22:32:02 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 22:32:02 - Started 13628
+2024-01-03 22:35:03 - Stopping vdcallwebservice.exe
+2024-01-03 22:35:03 - ProcessKill 13628
+2024-01-03 22:35:03 - Found child process: 16976 Name: conhost.exe
+2024-01-03 22:35:03 - Found child process: 20372 Name: node.exe
+2024-01-03 22:35:03 - Stopping process 16976
+2024-01-03 22:35:03 - Send SIGINT 16976
+2024-01-03 22:35:03 - SIGINT to 16976 failed - Killing as fallback
+2024-01-03 22:35:03 - Stopping process 20372
+2024-01-03 22:35:03 - Send SIGINT 20372
+2024-01-03 22:35:03 - SIGINT to 20372 failed - Killing as fallback
+2024-01-03 22:35:03 - Stopping process 13628
+2024-01-03 22:35:03 - Send SIGINT 13628
+2024-01-03 22:35:03 - SIGINT to 13628 failed - Killing as fallback
+2024-01-03 22:35:03 - Finished vdcallwebservice.exe
+2024-01-03 22:35:08 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-03 22:35:08 - Started 14140
+2024-01-03 23:04:11 - Stopping vdcallwebservice.exe
+2024-01-03 23:04:12 - ProcessKill 14140
+2024-01-03 23:04:12 - Found child process: 12880 Name: conhost.exe
+2024-01-03 23:04:12 - Found child process: 17616 Name: node.exe
+2024-01-03 23:04:13 - Stopping process 12880
+2024-01-03 23:04:13 - Send SIGINT 12880
+2024-01-03 23:04:13 - SIGINT to 12880 failed - Killing as fallback
+2024-01-03 23:04:13 - Stopping process 17616
+2024-01-03 23:04:13 - Send SIGINT 17616
+2024-01-03 23:04:13 - SIGINT to 17616 failed - Killing as fallback
+2024-01-03 23:04:13 - Stopping process 14140
+2024-01-03 23:04:13 - Send SIGINT 14140
+2024-01-03 23:04:13 - SIGINT to 14140 failed - Killing as fallback
+2024-01-03 23:04:13 - Finished vdcallwebservice.exe
+2024-01-04 14:41:42 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-04 14:41:42 - Started 6000
+2024-01-04 23:39:41 - Stopping vdcallwebservice.exe
+2024-01-04 23:39:41 - ProcessKill 6000
+2024-01-04 23:39:41 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-05 09:28:55 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-05 09:28:55 - Started 5956
+2024-01-05 11:44:52 - Stopping vdcallwebservice.exe
+2024-01-05 11:44:52 - ProcessKill 5956
+2024-01-05 11:44:52 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-05 12:58:00 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-05 12:58:00 - Started 6084
+2024-01-05 15:46:37 - Stopping vdcallwebservice.exe
+2024-01-05 15:46:37 - ProcessKill 6084
+2024-01-05 15:46:37 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-05 21:14:09 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-05 21:14:09 - Started 5052
+2024-01-06 02:38:07 - Stopping vdcallwebservice.exe
+2024-01-06 02:38:07 - ProcessKill 5052
+2024-01-06 02:38:07 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-06 13:04:23 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-06 13:04:24 - Started 5988
+2024-01-06 14:17:08 - Stopping vdcallwebservice.exe
+2024-01-06 14:17:08 - ProcessKill 5988
+2024-01-06 14:17:09 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-06 14:17:52 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-06 14:17:52 - Started 6188
+2024-01-06 14:39:19 - Stopping vdcallwebservice.exe
+2024-01-06 14:39:20 - ProcessKill 6188
+2024-01-06 14:39:20 - Found child process: 6236 Name: conhost.exe
+2024-01-06 14:39:20 - Found child process: 7568 Name: node.exe
+2024-01-06 14:39:21 - Stopping process 6236
+2024-01-06 14:39:21 - Send SIGINT 6236
+2024-01-06 14:39:21 - SIGINT to 6236 failed - Killing as fallback
+2024-01-06 14:39:21 - Stopping process 7568
+2024-01-06 14:39:21 - Send SIGINT 7568
+2024-01-06 14:39:21 - SIGINT to 7568 failed - Killing as fallback
+2024-01-06 14:39:21 - Stopping process 6188
+2024-01-06 14:39:21 - Send SIGINT 6188
+2024-01-06 14:39:21 - SIGINT to 6188 failed - Killing as fallback
+2024-01-06 14:39:21 - Finished vdcallwebservice.exe
+2024-01-06 18:31:29 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-06 18:31:29 - Started 13308
+2024-01-07 01:33:43 - Stopping vdcallwebservice.exe
+2024-01-07 01:33:43 - ProcessKill 13308
+2024-01-07 01:33:44 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-07 12:02:32 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-07 12:02:32 - Started 5900
+2024-01-07 14:05:08 - Stopping vdcallwebservice.exe
+2024-01-07 14:05:08 - ProcessKill 5900
+2024-01-07 14:05:09 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-07 16:18:02 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-07 16:18:02 - Started 6328
+2024-01-07 16:48:44 - Stopping vdcallwebservice.exe
+2024-01-07 16:48:44 - ProcessKill 6328
+2024-01-07 16:48:45 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-07 18:43:01 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-07 18:43:01 - Started 6600
+2024-01-07 19:26:01 - Stopping vdcallwebservice.exe
+2024-01-07 19:26:01 - ProcessKill 6600
+2024-01-07 19:26:02 - Found child process: 6624 Name: conhost.exe
+2024-01-07 19:26:02 - Found child process: 11944 Name: node.exe
+2024-01-07 19:26:02 - Stopping process 6624
+2024-01-07 19:26:02 - Send SIGINT 6624
+2024-01-07 19:26:02 - SIGINT to 6624 failed - Killing as fallback
+2024-01-07 19:26:02 - Stopping process 11944
+2024-01-07 19:26:02 - Send SIGINT 11944
+2024-01-07 19:26:02 - SIGINT to 11944 failed - Killing as fallback
+2024-01-07 19:26:02 - Stopping process 6600
+2024-01-07 19:26:02 - Send SIGINT 6600
+2024-01-07 19:26:02 - SIGINT to 6600 failed - Killing as fallback
+2024-01-07 19:26:02 - Finished vdcallwebservice.exe
+2024-01-07 20:06:51 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-07 20:06:51 - Started 14848
+2024-01-08 02:07:01 - Stopping vdcallwebservice.exe
+2024-01-08 02:07:02 - ProcessKill 14848
+2024-01-08 02:07:03 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-08 19:10:03 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-08 19:10:03 - Started 6072
+2024-01-09 02:22:19 - Stopping vdcallwebservice.exe
+2024-01-09 02:22:20 - ProcessKill 6072
+2024-01-09 02:22:20 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-09 03:07:31 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-09 03:07:31 - Started 5992
+2024-01-09 03:17:58 - Stopping vdcallwebservice.exe
+2024-01-09 03:17:58 - ProcessKill 5992
+2024-01-09 03:17:59 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-09 22:28:41 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-09 22:28:42 - Started 6536
+2024-01-10 01:55:57 - Stopping vdcallwebservice.exe
+2024-01-10 01:55:57 - ProcessKill 6536
+2024-01-10 01:55:57 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-01-10 12:34:42 - Starting C:\Program Files\nodejs\node.exe  --harmony E:\WebRTC\VDCall\node_modules\node-windows\lib\wrapper.js --file E:\WebRTC\VDCall\server.js --scriptoptions= --log "VDCall WebService wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-01-10 12:34:42 - Started 5976

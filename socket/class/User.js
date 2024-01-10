@@ -15,6 +15,7 @@ class User {
       .emit(EVENTS.SEND_PRIVATE_MESSAGE, message);
   }
   sendChatInRoom({ newChat, roomId }) {
+    console.log({ newChat, roomId,user:this.#socket.user });
     this.#socket.broadcast.to(this.#data.roomId).emit(EVENTS.RECEIVE_MESSAGE, {
       newChat,
       roomId,
